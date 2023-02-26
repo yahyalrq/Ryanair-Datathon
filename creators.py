@@ -28,14 +28,14 @@ def render_creators():
         st.subheader('Rayane Mazari')
         st.image('imgs/rayane.jpg')
     with col2:
-        st.subheader('Yahya Laraqui')
-        st.image('imgs/yahya.jpg')
+        st.subheader('Tamar Alphaidze')
+        st.image('imgs/tamar.jpg')
     with col3:
         st.subheader('Diego Sanmartin')
         st.image('imgs/diego.jpg')
     with col4:
-        st.subheader('Tamar Alphaidze')
-        st.image('imgs/tamar.jpg')
+        st.subheader('Yahya Laraqui')
+        st.image('imgs/yahya.jpg')
 
     reveal = st.button('Reveal')
 
