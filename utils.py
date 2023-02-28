@@ -6,7 +6,6 @@ import tensorflow.keras.layers as layers
 import streamlit as st
 import pickle
 
-
 # ----------- UTILS FOR FORECASTS ----------------
 @st.cache(show_spinner=False)
 def load_dataset():
@@ -82,13 +81,11 @@ def get_dummies(df):
     df=pd.get_dummies(df, columns=['month_of_year','hour_of_day','day_of_week'])
     return df
 
-
 @st.cache(suppress_st_warning=True, allow_output_mutation=True)
 def load_columns():
     columns = pickle.load(open('data/dfcolumns.pkl', 'rb'))
     complete_df = pd.DataFrame(columns = columns)
     return complete_df
-
 
 def update_df(df):
     complete_df = load_columns()
@@ -111,6 +108,8 @@ def update_df(df):
 
 
 
+def load_dataset2():
+    return 
 # ------------- UTILS FOR DASHBOARD --------------
 
 @st.cache(show_spinner=False)
